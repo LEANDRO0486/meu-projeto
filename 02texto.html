@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formatação de texto</title>
-    
+    <style> 
         address {
         
             /* fazendo elemento ficar em linha */
@@ -18,11 +18,27 @@
         }
         mark {
             background-color: aqua;
-        }     
-    </style>
+        } 
+        h1 
+        {
+            /* valores para text-alaign:
+            left, right, center, justify*/
+
+            text-align: center;
+        } 
+        p.dir {
+             text-align: right;
+
+             /* <p class="dir"> */
+ 
+         } </style>
+
 </head>
 <body>
     <h1>Formatação de texto</h1>
+
+<p class="dir"> História baseada em fatos reais.</p>
+
     <!-- Tag <u> = underline ( sublinhado) ( NÃO USAR)-->
     <!-- Tag <address> = endereço --> 
     <p>Orkutilson morava na <address>Rua do sobe e desce,333</address> e seu e-mail era <address>orkutilson@gmail.com</address></p>
@@ -53,6 +69,27 @@
          sup = texto subscrito (SUPerscript)-->
 
     <p> Orkutilson também gostava de fórmulas. Suas preferidas eram H<Sub>2</Sub>O e E = mc<sup>2</sup> </p>
+    <!-- <quoute> = citações no meio de parágrafo
+         <blockquoute> = um bloco de citações (com varias linhas, por exemplo) 
+         -->
+    <p> Sua frase favorita era <quote> "Penso, logo existo" (Descartes) </quote>E seu trecho de música preferido era</p>
+    <blockquoute>
+        Há tantos mundos diferentes<br>
+        Tantos sóis diferentes. <br>
+        E nós temos apenas um mundo,<br>
+        Mas vivemos em mundos diferentes.<br>
+        (Dire Straits, Brothers in Arms) </blockquoute>
 
+    <!-- <abbr> = Definições de abreviações 
+         <code> = representa código de programação ou marcação. no caso de HTML, Os sinais < e > precisam ser substituído por &lt; e &gt;, respectivamente -->
+    
+        <p> Em suas horas vagas, Orkutilson era um membro ativo da <abbr title="Associação dos Moradores do Bairro Limão">ASMOBALI</abbr> e estudava
+        <abbr title="hypperText Markup language">HTML</abbr>. 
+        Suas tags favoritas eram
+        <code>&lt;blockquote&gt;</code> e 
+        <code>&lt;address&gt;</code>
+        </p>
+
+        <p class="dir"><em>Autor: desconhecido</em></p>
 </body>
 </html>
